@@ -1,6 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: url("./../images/bg.jpg");
+  background: url("./../images/bg.jpg") no-repeat;
   background-size: cover;
+}
+
+img {
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+  padding-left: unset;
+}
+
+a {
+  text-decoration: none;
+}
+
+section:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+#links {
+  justify-content: flex-end;
+}
+
+.subscribe {
+  color: #fff;
+  margin-right: 80px;
+}
+
+.fa-facebook-f {
+  background-color: #475993;
+  color: #7681AC;
+  padding: 10px 16px;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.fa-rss {
+  background-color: #BB8A42;
+  color: #CCA76E;
+  padding: 10px 13px;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.fa-twitter {
+  background-color: #708EC2;
+  color: #95A8CF;
+  padding: 10px 11px;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.fa-youtube {
+  background-color: #A03F33;
+  color: #BA6D67;
+  padding: 10px 11px;
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+#pages a {
+  background-color: #A73634;
+  color: #fff;
+  text-align: center;
+}
+
+#pages a:hover {
+  background-color: #fff;
+  color: #A73634;
+  cursor: pointer;
+}
+
+#pages a:active {
+  background-color: gray;
+  color: #A73634;
+  border-color: transparent;
+}
+
+#carousel {
+  max-height: 430px;
+  background: url("./../images/top-image.png") no-repeat 45% 27%;
+  overflow: hidden;
+  border: solid 10px #fff;
+  background-size: 127%;
+  position: relative;
+}
+
+#carousel > .grid {
+  opacity: 0.3;
+}
+
+a {
+  text-decoration: none;
+}
+
+#carousel > .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% -50%);
+  min-width: 25rem;
+}
+
+@media (min-width: 768px) {
+  #carousel > .logo {
+    left: 3%;
+    transform: translateY(-50%);
+  }
+}
+#news article {
+  background-color: #fff;
+  padding: 20px;
+  height: 400px;
+}
+
+#news article h1 {
+  font-size: 24px;
+}
+
+#news article h2 {
+  font-size: 18px;
+}
+
+.w-100 {
+  margin: 20px;
+}
+
+.skateboarder span {
+  position: absolute;
+  text-transform: uppercase;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.skateboarder {
+  border: solid 5px #fff;
+  position: relative;
+}
+
+.skateboarder_lance {
+  margin-right: 30px;
+}
+
+.skateboarder_tommy {
+  padding: 0px;
+  height: 100%;
+}
+
+#skateboards {
+  background: #fff;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .skateboard-image {
+    position: relative;
+    transform-origin: top left;
+    transform: rotate(90deg) translateY(-25%);
+    height: 260px;
+    width: 65px;
+  }
+
+  .skateboard-image img {
+    width: 260px;
+    height: 65px;
+    top: 0;
+  }
+}
+.contact {
+  padding-right: 100px;
+}
+
+.contact-info {
+  padding: 30px;
+  background-color: #fff;
+  margin-bottom: 100px;
 }
 
 /*# sourceMappingURL=styles.css.map */
